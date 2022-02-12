@@ -124,6 +124,14 @@ app_license = "MIT"
 # 	]
 # }
 
+scheduler_events = {
+	"cron": {
+		"* * * * *": [
+			"event_notification.event_alert.send_notification", "event_notification.event_alert.log"
+		]
+	}
+}
+
 # Testing
 # -------
 
